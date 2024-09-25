@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/194/194279.png">
+    <title>Quem foi Gabrielli Alani?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #a88ec9;
+            color: #7719d5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #8225b0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffc107;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(192, 148, 218);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+            border: 2px solid #753ca4; 
+        }
+        h2 {
+            color: #840dbc;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0; 
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #7914a4;
+            width: 80%; 
+        }
+        button {
+            background-color: #8a55a6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4c0969;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+        }
+        .galeria div {
+            margin: 5px;
+            flex: 1 1 30%;
+            max-width: 200px; 
+            width: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #7f3f94;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #631378;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color:  #2a0d34;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .blog {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .post {
+            background-color: rgb(180, 144, 208);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px #2a0d34;
+            width: 80%; 
+            text-align: left; 
+            border: 2px solid #7a1a9d;
+        }
+        .post img {
+            display: block; 
+            margin: 10px auto; 
+            width: 350px;
+        }
+
+        h3{
+            display: flex;
+            justify-content: center;  
+        }
+
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Um pouco da minha história</h1>
+    <nav>
+        <ul>
+            <li><a href="#pessoal">Sobre Mim</a></li>
+            <li><a href="#artigo">Artigo</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#precos">Tabela de Preços</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div id="pessoal" class="section">
+        <h2>Sobre Mim</h2>
+        <img src="https://scontent.fcfc1-1.fna.fbcdn.net/v/t39.30808-6/450120761_1921540791661454_3172594788047607894_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=dLZPdOnoRIcQ7kNvgG12Kro&_nc_ht=scontent.fcfc1-1.fna&_nc_gid=AdTVLeB_9u1O4U2P7_cHZl9&oh=00_AYBVE7ReMJpwZ4Puek0YjY_N8Rkb-2Bw29lS1p0u_HqgTw&oe=66FA0BA8" alt="Minha Foto">
+        <p>Nome: Gabrielli Alani De Marco</p>
+        <p>Idade: 16 anos</p>
+        <p>Hobbies: Gosto de ler, comer e dormir</p>
+    </div>
+
+    <div id="artigo" class="section">
+        <h2>Frase motivacional</h2>
+        <p>Seu tempo é limitado, não o gaste vivendo a vida de outra pessoa. Não fique preso aos dogmas, que é viver do que as outras pessoas pensam.</p>
+    </div>
+
+    <div id="contato" class="section">
+        <h2>Deixe uma mensagem para ajudar pessoas com depressão, ajuda nunca é demais!</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="galeria" class="section">
+        <h2>Galeria de animaiszinhos bebês</h2>
+        <div class="galeria">
+            <div><img src="https://www.petz.com.br/blog/wp-content/uploads/2017/07/filhotes-cachorro-01.jpg" alt="Imagem 1"></div>
+            <div><img src="https://static.tudointeressante.com.br/uploads/2018/11/filhotes-de-animais-1.jpg" alt="Imagem 2"></div>
+            <div><img src="https://i.pinimg.com/736x/38/4a/db/384adbfc6d202f0615463e548349efcb.jpg" alt="Imagem 3"></div>
+        </div>
+    </div>
+
+    <div id="precos" class="section">
+        <h2>Tabela de Preços</h2>
+        <table>
+            <tr>
+                <th>Filhotes</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Cachorrinho</td>
+                <td>R$ 250,00</td>
+            </tr>
+            <tr>
+                <td>Preguiçinha</td>
+                <td>R$ 600,00</td>
+            </tr>
+            <tr>
+                <td>Hipopótinho</td>
+                <td>R$ 1000,00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="blog" class="section blog">
+        <h2>Blog</h2>
+        <div class="post">
+            <h3>Eudora a melhor  marca de cabelo</h3>
+            <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_1800,c_limit/e_trim/v1/imagens/product/E2022020201/2f88ec40-3be3-497a-898c-22b1d9d5d9f5-kit-eudora-siage-cica-therapy-completo-4-produtos.png" alt="Imagem do Post 1">
+            <p>A melhor marca de cabelos que você encontrará, traz maciez, leveza, hidratação e aspecto de cabelo brilhoso</p>
+        </div>
+        <div class="post">
+            <h3>Perfume e hidratante Eudora</h3>
+            <img src="img1.png" alt="Imagem do Post 1">
+            <p>PROMOÇÃO!! APENAS 59,90</p>
+        </div>
+        <div class="post">
+            <h3>Elseve Rosinha</h3>
+            <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_800/v1/imagens/product/MP214527/51c97d27-87eb-4637-a5e8-7b868292b3c7-mp214527-kit-elseve-glycolic-gloss-com-6.png" alt="Imagem do Post 1">
+            <p>Além de ser rosa e muito bonito, ainda hidrata muito o cabelo. </p>
+        </div>
